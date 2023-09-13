@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHUN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #container {
+            max-width: 1920px;
+        }
+
+        @media (min-width: 0px) and (max-width: 768px) {
+            div#splash-image {
+                background-image: url('./768_assets/fashun_banner_768.png');
+                background-size: cover;
+
+                width: 100%;
+                height: 25vh;
+                background-position: top left
+            }
+            h1 {
+                text-align: center;
+                font-size: 4rem;
+                font-weight:100;
+                padding: 10px;
+            }
+            nav{
+                display:none;
+            }
+            button {
+                background: none;
+                border: none;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+            }
+            button:hover {
+                background-color:rgba(177, 177, 177, 0.54);
+            }
+            
+            #jacket {
+                background: 
+                        linear-gradient(-15deg, white 50%, rgb(237, 128, 78));
+                max-height: 250px;
+                max-width: 550px;
+                text-align: center;
+                position:relative;
+                margin: auto;
+                top: 40px;
+            }
+            #shoe {
+                background: 
+                        linear-gradient(-15deg, white 50%, rgb(237, 128, 78));
+                max-height: 250px;
+                max-width: 550px;
+                text-align: center;
+                position:relative;
+                margin: auto;
+                top: 40px;
+
+            }
+            #jacket_text {
+                text-align: center;
+                font-family: 'Merriweather' , serif;
+                font-size: 2rem;
+                margin-top: 5rem;
+                margin-bottom: 1rem;
+            }
+            #shoe_text {
+                text-align: center;
+                font-family: 'Merriweather' , serif;
+                font-size: 2rem;
+                margin-top: 5rem;
+                margin-bottom: 1rem;
+            }
+            #sale-items_two{
+                display: none;
+            }
+            
+            
+        }
+        
+        /* NEW RESOULUTION STARTS HERE */   /* NEW RESOULUTION STARTS HERE */   /* NEW RESOULUTION STARTS HERE */
+        
+        @media (min-width: 768px) and (max-width: 1279px) {
+            div#splash-image {
+                background-image: url('./1280_assets/fashun_banner_1280.png');
+                background-size: cover;
+                width: 100%;
+                height: 50vh;
+                background-position: center center;
+            }
+            button {
+                display: none
+            }
+            .sale-items{
+                display: none;
+            }
+            #logo{
+                display: inline-block;
+            }
+            h1 {
+                float: left;
+                line-height: 8.5vh;
+                padding-left: 5vw;
+                font-size: 4vw
+            }
+            nav {
+                float: right;
+                margin-right: 1vw;
+    
+            }
+            nav a {
+                color: black;
+                line-height: 9.5vh;
+                margin: auto 4vw;
+                text-decoration: none;
+                font-family: 'Merriweather' , serif;
+                font-size: 1.5vw;
+                font-weight: 500;
+            }
+            .sale-items_two {
+                display: inline-block;
+            }
+            .sale-items_two img{
+                display: inline-block;
+                margin-left: 10vw;
+                margin-right: 10vw;
+                margin-top: 5vh
+            }
+            #two_shoe {
+                float: left;
+            }
+            #hat {
+                float: right;
+            }
+            #text_2 {
+                display: inline-block;
+                text-align: center;
+                font-family: 'Merriweather' , serif;
+                font-size: 1.75rem;
+                margin-top: 5vh;
+                margin-left: 11.5vw;
+                margin-right: 20vw;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            div#splash-image {
+                background-image: url('./1920_assets/fashun_banner_1920.jpg');
+                background-size: cover;
+                width: 100%;
+                /* max-width: 1920px; */
+                height: 50vh;
+                background-position: top center
+            }
+            button{
+                display: none
+            }
+        }
+
+        #logo {}
+
+        header {}
+
+        header nav {}
+
+        header nav a {}
+
+        #logo h1 {
+            /* font-family merriweather from Google Fonts */
+
+            font-weight: 200;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+                <div id="logo">
+                <h1>FASHUN</h1>
+                </div>
+                <nav>
+                    <a href="#">Fall Fashions</a>
+                    <a href="#">Shop Now</a>
+                    <a href="#">Fashun Club</a>
+                </nav>
+            </header>
+            <button> 
+                <img alt="menu" type="image/png" src="./768_assets/Hamburger_menu.png" height="70">
+            </button>
+        <div id="splash-image"></div>
+        <main>
+            <div class="sale-items">
+                <div id="jacket"> 
+                    <img style="padding:15px;" alt=" Jacket " type="image/png" src="./768_assets/fashun_jacket_768.png" height="250" />    
+                </div>
+                <p id="jacket_text">SHOP WOMEN'S OUTERWEAR</p>
+                <div id="shoe">
+                    <img style="padding:10px;" alt=" shoe " type="image/png" src="./768_assets/fashun_shoe_768.png" height="210" />
+                </div>
+                <p id="shoe_text">SHOP MEN'S SHOES</p>
+
+            </div>
+
+            <div class="sale-items_two">
+                <div id="two_shoe">
+                    <img  alt=" shoe 2" type="image/png" src="./1280_assets/fashun_shoe_1280.png" height="175"  /> 
+                </div>
+                <div id="hat">
+                    <img  alt=" hat " type="image/png" src="./1280_assets/fashun_hat_1280.png" height="175" />
+                </div>
+                <p id="text_2">SHOP MEN'S SHOES</p>
+                <p id="text_2">SHOP HEADWEAR</p>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
